@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="me.playwarrior.calculator.controllers.CalculatorController">
+  <children>
+    <Button fx:id="addition" layoutX="68.0" layoutY="200.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="66.0" text="+" />
+    <Button fx:id="substraction" layoutX="184.0" layoutY="200.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="66.0" text="-" />
+    <Button fx:id="multiplication" layoutX="350.0" layoutY="200.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="66.0" text="*" />
+    <Button fx:id="division" layoutX="466.0" layoutY="200.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="66.0" text="/" />
+    <TextArea fx:id="num1" layoutX="68.0" layoutY="56.0" prefHeight="53.0" prefWidth="182.9998779296875" wrapText="true" />
+    <TextArea fx:id="num2" layoutX="283.0" layoutY="56.0" prefHeight="53.0" prefWidth="183.0" wrapText="true" />
+    <Text layoutX="466.0" layoutY="87.0" scaleX="0.999994485618493" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+    <Text fx:id="answer" layoutX="479.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antwoord" />
+    <Text fx:id="method" layoutX="263.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" />
+    <Button fx:id="calculate" layoutX="68.0" layoutY="301.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="463.5703125" text="Calculate" />
+    <Text fx:id="error" layoutX="73.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <Button fx:id="history" layoutX="534.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" text="History" />
+  </children>
+</AnchorPane>
