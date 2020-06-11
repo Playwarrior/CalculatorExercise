@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import me.playwarrior.calculator.utils.Method;
 
+import java.io.FileInputStream;
+
 public class Main extends Application {
 
     private static Method currentMethod = Method.ADDITION;
@@ -15,7 +17,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("gui/Calculator.fxml"));
+        Parent root = new FXMLLoader().load(new FileInputStream("src/me/playwarrior/calculator/gui/Calculator.fxml"));
         primaryStage.setTitle("Calculator");
         primaryStage.setResizable(false);
         primaryStage.setScene(new Scene(root, 600, 400));
